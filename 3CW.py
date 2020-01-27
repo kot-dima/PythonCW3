@@ -1,116 +1,56 @@
-# from mod.calc import plus, minus, multiple, division
+# from calc import *
 
-# # res = plus(2, 2)
-# # print("Result =>", res)
+# s = 0
+# q_index = []
 
-# # res = minus(2, 2)
-# # print("Result =>", res)
+# print("Ready question? GO!")
 
-# print("Calculate a ? b")
-# def Calculate():
-#     a = int(input("Enter a : "))
-#     dia = input("Enter + | - | * | / |: ")
-#     b = int(input("Enter b : "))
+# print("Enter correct answer 1, 2 or 3")
+# print("  ")
 
-#     if dia == "+" :
-#         res = plus(a, b)
-#         print(a,"+", b, "=", res)
+# for test in range(0, 12):
+#     print(question[test])
+#     q_index1 = input("Answear: ")
+#     q_index.append(q_index1)
+#     if q_index[test] == answear[test]:
+#         s += 1
 
-#     elif dia == "-" :
-#         res = minus(a, b)
-#         print(a,"-", b, "=", res)
-
-#     elif dia == "*" :
-#         res = multiple(a, b)
-#         print(a,"*", b, "=", res)
-
-#     elif dia == "/" :
-#         res = division(a, b)
-#         print(a,"/", b, "=", res)
-
-#     else:
-#         print("Enter correct !!!")
-
-# Calculate()
+# if s >= 10:
+#     print("відмінно - ", s , "балів")
+# elif s <= 9 or s >= 7:
+#     print("добре - ", s , "балів")
+# elif s <= 6 or s >= 4:
+#     print("задовільно - ", s , "балів")
+# else:
+#     print("незадовільно - ", s , "балів")
 
 
+# -3 (3*1)   -5(5*1)
+# -9 (3*3)   -10(5*2)
+# -15 (3*5)  -20(5*4)
 
+print("Василина Премудра грала зі Змієм Гориничем у шашки. \nВ цій казці вони з невідомих причин почали їх по черзі їсти...\n Спочатку Василина з’їла у Горинича 3 шашки, а Горинич у Василини – 5 шашок...")
 
+vaseluna = 3
+zmiy = 5
 
-from mod.calc import plus
+v = 3
+z = 2
 
-print("Ready question? GO!")
-def Questions():
-    q1 = int(input("Question_1 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q1 == 1 :
-        print("true")
-        res =+ 1 
-    else:
-        print("false")
-
-    q2 = int(input("Question_2 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q2 == 2 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-    
-    q3 = int(input("Question_3 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble)) ? : "))
-    if q3 == 1 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-
-    q4 = int(input("Question_4 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q4 == 4 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-
-    q5 = int(input("Question_5 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q5 == 3 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-    
-    q6 = int(input("Question_6 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q6 == 3 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-
-    q7 = int(input("Question_7 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q7 == 1 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-    
-    q8 = int(input("Question_8 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q8 == 2 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-
-    q9 = int(input("Question_9 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q9 == 4 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-
-    q10 = int(input("Question_10 : bla bla bla - 1(blo blo), 2(blo blo), 3(blo blo) or 2(ble ble) ? : "))
-    if q10 == 2 :
-        print("true")
-        res =+ 1
-    else:
-        print("false")
-    
-    print("resultat : ", res)
-
-Questions()
+s = []
+s1 = []
+while True:
+    vaselunaN = vaseluna*v
+    zmiyN =  zmiy*z
+    z += 2
+    v += 2
+    print(" ")
+    print("Василина з'їла ", vaselunaN, "шашок")
+    print("Змій Горинич з'їв", zmiyN, "шашок" )
+    print(' ')
+    s.append(vaseluna)
+    s1.append(zmiy)
+    theEnd = input("Натисніть Enter для продовження поїдання; \n Введіть \"a\" щоб Змій з'їв Васелину: ")
+    if theEnd == "a":
+        print("Змій Горинич з'їдає Василину на", len(s), "кроці\n", "Горинич з'їв : ", sum(s), "шашок\n", "Василина:", sum(s1), "шашок")
+        break
